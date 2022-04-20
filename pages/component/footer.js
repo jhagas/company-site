@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import pic from "./home/image/footer.png";
-import logo from "./home/image/logo.svg";
+import pic from "../home/image/footer.png";
+import logo from "../home/image/logo.svg";
 
 export default function Footer() {
   return (
@@ -33,10 +33,10 @@ export default function Footer() {
             <div className="sm:pt-6 mr-20">
               <h2 className="font-extrabold text-xl mb-5">About Us</h2>
               <div className="flex flex-col gap-1">
-                <Link href="#" passHref>
+                <Link href="/terms" passHref>
                   <a className="underline">Terms of Use</a>
                 </Link>
-                <Link href="#" passHref>
+                <Link href="/privacy" passHref>
                   <a className="underline">Privacy Policy</a>
                 </Link>
               </div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Buttoncomp from "../button";
+import Buttoncomp from "../component/button.js";
 import bg1 from "./image/bg1.png";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -92,7 +92,7 @@ export default function Header() {
                 intelligent control field
               </p>
             </div>
-            <Buttoncomp href="/product" text="Find Out More!" />
+            <Buttoncomp href="/projects" text="Find Out More!" />
           </div>
         </div>
         <div className="embla_slide relative" style={{ flex: "0 0 100%" }}>
@@ -120,7 +120,7 @@ export default function Header() {
                 intelligent control field
               </p>
             </div>
-            <Buttoncomp href="/product" text="Find Out More!" />
+            <Buttoncomp href="/projects" text="Find Out More!" />
           </div>
         </div>
       </div>

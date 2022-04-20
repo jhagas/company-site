@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Buttoncomp from "../button";
+import Buttoncomp from "../component/button.js";
 import pic from "./image/overview.png";
 
 export default function Overview() {

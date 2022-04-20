@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "./home/image/logo.svg";
+import logo from "../home/image/logo.svg";
 import Dropdown from "./Dropdown";
 import { useEffect, useState } from "react";
 
@@ -38,9 +38,9 @@ export default function Navbar() {
       </div>
       <div className="md:flex md:flex-row hidden text-white gap-9 font-lato font-extrabold text-sm">
         <Link href="/" passHref><a className="hover:text-orange1 transition-colors">HOME</a></Link>
-        <Link href="/" passHref><a className="hover:text-orange1 transition-colors">ABOUT</a></Link>
-        <Link href="/" passHref><a className="hover:text-orange1 transition-colors">PROJECT</a></Link>
-        <Link href="/" passHref><a className="hover:text-orange1 transition-colors">EVENT</a></Link>
+        <Link href="/about" passHref><a className="hover:text-orange1 transition-colors">ABOUT</a></Link>
+        <Link href="/projects" passHref><a className="hover:text-orange1 transition-colors">PROJECT</a></Link>
+        <Link href="/event" passHref><a className="hover:text-orange1 transition-colors">EVENT</a></Link>
       </div>
       <div className="md:hidden">
         <Dropdown />
