@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Buttoncomp from "../component/button.js";
+import Buttoncomp from "../button.js";
 import pic from "./image/overview.png";
 
 export default function Overview() {
@@ -40,7 +40,6 @@ export default function Overview() {
             <Image
               src={pic}
               layout="fill"
-              relative
               objectFit="cover"
               quality={100}
               alt="arduino and project board"

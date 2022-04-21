@@ -1,5 +1,11 @@
+import Footer from "../component/footer";
+import Navbar from "../component/navbar";
+
 export default function Privacy() {
     return (
-        <div></div>
+        <div>
+            <Navbar />
+            <Footer />
+        </div>
     )
 }

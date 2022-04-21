@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Buttoncomp from "../component/button.js";
+import Buttoncomp from "../button.js";
 import bg1 from "./image/bg1.png";
 import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
@@ -72,7 +72,6 @@ export default function Header() {
             <Image
               src={bg1}
               layout="fill"
-              relative
               objectFit="cover"
               quality={100}
               alt="background"
@@ -100,7 +99,6 @@ export default function Header() {
             <Image
               src={bg1}
               layout="fill"
-              relative
               objectFit="cover"
               quality={100}
               alt="background"

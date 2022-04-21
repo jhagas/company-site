@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../home/image/logo.svg";
+import logo from "./home/image/logo.svg";
 import Dropdown from "./Dropdown";
 import { useEffect, useState } from "react";
 

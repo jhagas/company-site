@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import pic from "../home/image/footer.png";
-import logo from "../home/image/logo.svg";
+import pic from "./home/image/footer.png";
+import logo from "./home/image/logo.svg";
 
 export default function Footer() {
   return (
