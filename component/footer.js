@@ -8,34 +8,31 @@ export default function Footer() {
     <div className="bg-blue">
       <Image src={pic} alt="footer background" />
       <div className="p-10 flex flex-row flex-wrap lg:justify-between justify-center">
-        <div className="flex flex-row gap-x-20 gap-y-10 text-white font-lato font-medium text-md flex-wrap sm:justify-start justify-center">
+        <div className="flex flex-row gap-x-20 gap-y-10 font-lato font-medium text-md flex-wrap sm:justify-start justify-center">
           <div className="sm:w-52 w-36">
             <Image src={logo} alt="footer logo" />
           </div>
-          <div className="flex flex-row gap-x-20">
+          <div className="flex flex-row gap-x-20 text-white">
             <div className="sm:pt-6">
               <h2 className="font-extrabold text-xl mb-5">Contact</h2>
               <div className="flex flex-col gap-1">
                 <Link href="#" passHref>
-                  <a className="underline">Email</a>
+                  <a className="underline ">Email</a>
                 </Link>
                 <Link href="#" passHref>
-                  <a className="underline">Instagram</a>
+                  <a className="underline ">Instagram</a>
                 </Link>
                 <Link href="#" passHref>
-                  <a className="underline">LINE</a>
+                  <a className="underline ">LINE</a>
                 </Link>
                 <Link href="#" passHref>
-                  <a className="underline">Linkedin</a>
+                  <a className="underline ">Linkedin</a>
                 </Link>
               </div>
             </div>
-            <div className="sm:pt-6 mr-20">
+            <div className="sm:pt-6 sm:mr-20">
               <h2 className="font-extrabold text-xl mb-5">About Us</h2>
               <div className="flex flex-col gap-1">
-                <Link href="/terms" passHref>
-                  <a className="underline">Terms of Use</a>
-                </Link>
                 <Link href="/privacy" passHref>
                   <a className="underline">Privacy Policy</a>
                 </Link>
