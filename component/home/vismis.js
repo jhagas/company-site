@@ -6,7 +6,7 @@ import education from "./image/education.svg";
 export default function Vismis() {
   return (
     <div>
-      <div className="flex flex-col items-center gap-16 bg-gray sm:px-0 px-4 py-16">
+      <div className="flex flex-col items-center gap-16 bg-gray sm:px-0 px-7 py-16">
         <div className="max-w-[40rem] text-center">
           <h1 className="md:text-4xl text-3xl font-bold font-work">Our Vision</h1>
           <p className="sm:text-lg font-lato font-medium mt-3">

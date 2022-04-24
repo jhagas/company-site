@@ -65,7 +65,7 @@ export default function Header({ main, add }) {
   );
 
   return (
-    <div className=" overflow-hidden embla" ref={emblaRef}>
+    <div className=" overflow-hidden embla bg-gray1" ref={emblaRef}>
       <div className="flex h-96 md:h-[34rem] lg:h-[40rem] embla_container">
         <div className="embla_slide relative" style={{ flex: "0 0 100%" }}>
           <div className="overflow-hidden">

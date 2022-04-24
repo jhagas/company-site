@@ -22,7 +22,9 @@ export default function Overview({ info }) {
                 {info.attributes.title}
               </h1>
               <div className="font-work text-lg flex flex-col gap-4 indent-4 mb-6">
-                <p>{info.attributes.description}</p>
+                {info.attributes.description.split("\n\n").map((desc, line) => (
+                  <p key={line}>{desc}</p>
+                ))}
               </div>
               <Buttoncomp text={info.attributes.button} href="/about" />
             </div>
@@ -40,12 +42,14 @@ export default function Overview({ info }) {
               alt="background"
               className="brightness-[.5]"
             />
-            <div className="px-10 py-8 text-white z-10 drop-shadow-md">
+            <div className="md:px-20 sm:px-16 px-12 py-8 text-white z-10 drop-shadow-md">
               <h1 className="font-work font-bold text-2xl mb-4">
                 {info.attributes.title}
               </h1>
               <div className="font-work text-md flex flex-col gap-4 mb-6">
-                <p>{info.attributes.description}</p>
+                {info.attributes.description.split("\n\n").map((desc, line) => (
+                  <p key={line}>{desc}</p>
+                ))}
               </div>
               <Buttoncomp text={info.attributes.button} href="/about" />
             </div>

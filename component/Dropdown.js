@@ -17,17 +17,17 @@ const solutions = [
   },
   {
     name: "About",
-    href: "/",
+    href: "/about",
     icon: AiOutlineInfoCircle,
   },
   {
     name: "Project",
-    href: "/",
+    href: "/projects",
     icon: AiOutlineProject,
   },
   {
     name: "Event",
-    href: "/",
+    href: "/event",
     icon: BsCalendarEvent,
   },
 ];
