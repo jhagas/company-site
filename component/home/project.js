@@ -8,9 +8,9 @@ function Projects({ projects }) {
     <div className="sm:px-24 px-12 py-16 flex flex-col gap-10">
       <div>
         <h1 className="font-work font-bold text-4xl text-black mb-1">
-          Projects
+          Latest Projects
         </h1>
-        <p className="font-work text-xl text-black">
+        <p className="font-work md:text-xl text-black text-lg">
           Our projects in renewable energy, transportation, and many more!
         </p>
       </div>
@@ -19,7 +19,7 @@ function Projects({ projects }) {
           <div className="flex flex-row gap-3 flex-wrap justify-center w-full mb-3">
             {projects.map((item, index) => (
               <Link
-                href={"/projects/" + item.attributes.slug}
+                href={"/projects/detail/" + item.attributes.slug}
                 key={index}
                 passHref
               >
@@ -52,7 +52,7 @@ function Projects({ projects }) {
             ))}
           </div>
           <Link href="/projects" passHref>
-            <a className="bg-black text-white w-full p-4 text-center font-work font-medium text-xl hover:bg-blue2 transition-colors">
+            <a className="bg-black text-white w-full p-4 text-center font-work font-bold md:text-xl text-lg hover:bg-blue2 transition-colors">
               All Projects
             </a>
           </Link>
