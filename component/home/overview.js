@@ -43,10 +43,10 @@ export default function Overview({ info }) {
               className="brightness-[.5]"
             />
             <div className="md:px-20 sm:px-16 px-12 py-8 text-white z-10 drop-shadow-md">
-              <h1 className="font-work font-bold text-2xl mb-4">
+              <h1 className="font-work font-bold sm:text-3xl text-2xl mb-4">
                 {info.attributes.title}
               </h1>
-              <div className="font-work text-md flex flex-col gap-4 mb-6">
+              <div className="font-work sm:text-lg text-md flex flex-col gap-4 mb-6">
                 {info.attributes.description.split("\n\n").map((desc, line) => (
                   <p key={line}>{desc}</p>
                 ))}

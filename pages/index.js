@@ -28,7 +28,7 @@ export default function Home({ projects, mainheader, header, about }) {
 export async function getStaticProps() {
   // Run API calls in parallel
   const [projectRes, mainheadRes, headRes, aboutRes] = await Promise.all([
-    fetchAPI("/projects", { populate: ["image", "project_category"] }),
+    fetchAPI("/projects", { populate: ["image"], sort: "publishedAt:desc", pagination:{page: 1, pageSize:3}}),
     fetchAPI("/mainheader", { populate: "bg" }),
     fetchAPI("/headers", { sort: "publishedAt:desc", populate: "bg" }),
     fetchAPI("/about", { populate: "bg" }),
