@@ -5,13 +5,13 @@ import { getStrapiMedia } from "../../lib/media";
 
 function Projects({ projects }) {
   return (
-    <div className="sm:px-24 px-12 py-16 flex flex-col gap-10">
+    <div className="xl:px-56 sm:px-24 px-12 py-16 flex flex-col gap-10">
       <div>
         <h1 className="font-work font-bold text-4xl text-black mb-1">
           Latest Projects
         </h1>
         <p className="font-work md:text-xl text-black text-lg">
-          Our projects in renewable energy, transportation, and many more!
+          Our latest projects in renewable energy, transportation, and many more!
         </p>
       </div>
       <div className="flex flex-col items-center gap-10">

@@ -6,7 +6,9 @@ import logo from "./home/image/logo.svg";
 export default function Footer() {
   return (
     <div className="bg-blue">
-      <Image src={pic} alt="footer background" />
+      <div className="w-screen">
+        <Image src={pic} alt="footer background" layout="responsive" />
+      </div>
       <div className="p-10 flex flex-row flex-wrap lg:justify-between justify-center">
         <div className="flex flex-row gap-x-20 gap-y-10 font-lato font-medium text-md flex-wrap sm:justify-start justify-center">
           <div className="sm:w-52 w-36">

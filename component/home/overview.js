@@ -6,7 +6,7 @@ export default function Overview({ info }) {
   return (
     <>
       <div className="bg-orange px-16 py-[4rem] hidden lg:block">
-        <div className="relative flex flex-row justify-between h-fit">
+        <div className="relative flex flex-row justify-between max-w-screen-xl my-0 mx-auto">
           <div>
             <Image
               src={getStrapiMedia(info.attributes.bg)}
