@@ -7,7 +7,9 @@ import Head from "next/head";
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <link rel="shortcut icon" href="/logo.png" />
+      </Head>
       <Component {...pageProps} />
     </>
   );
