@@ -1,22 +1,34 @@
 import { NextSeo } from "next-seo";
 
-export default function Seo() {
+// const info = {
+//   title: "",
+//   url: "/",
+//   description: "",
+//   images: {
+//     url: "",
+//     alt: "",
+//     type: "image/png",
+//   },
+//   sitename: ""
+// }
+
+export default function Seo({info}) {
   return (
       <NextSeo
-        title="Techno.in"
-        description="This example uses more of the available config options."
+        title={info.title}
+        description={info.description}
         openGraph={{
-          url: "https://www.url.ie/a",
-          title: "Techno.in",
-          description: "Open Graph Description",
+          url: info.url,
+          title: info.title,
+          description: info.description,
           images: [
             {
-              url: "https://www.example.ie/og-image-01.jpg",
-              alt: "Og Image Alt",
+              url: info.images.url,
+              alt: info.images.alt,
               type: "image/png",
             },
           ],
-          site_name: "SiteName",
+          site_name: info.sitename,
         }}
       />
   );

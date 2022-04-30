@@ -7,21 +7,19 @@ export default function Seo() {
     <>
       <NextSeo
         title="Techno.in"
-        description="This example uses more of the available config options."
+        description="Advancing technological progress through instrumentation and intelligent control field."
         openGraph={{
-          url: "https://www.url.ie/a",
+          url: "https://techno.in/",
           title: "Techno.in",
-          description: "Open Graph Description",
+          description: "Advancing technological progress through instrumentation and intelligent control field",
           images: [
             {
-              url: "https://www.example.ie/og-image-01.jpg",
-              width: 800,
-              height: 600,
+              url: "https://res.cloudinary.com/dgkou6c4w/image/upload/v1651337098/Screenshot_from_2022_04_30_23_44_35_a90a9703a6.png?updated_at=2022-04-30T16:44:59.833Z",
               alt: "Og Image Alt",
-              type: "image/jpeg",
+              type: "image/png",
             },
           ],
-          site_name: "SiteName",
+          site_name: "techno.in",
         }}
       />
       <OrganizationJsonLd
@@ -36,14 +34,6 @@ export default function Seo() {
           postalCode: "62111",
           addressCountry: "ID",
         }}
-        contactPoint={[
-          {
-            telephone: "+1-401-555-1212",
-            contactType: "customer service",
-            areaServed: "US",
-            availableLanguage: ["English", "Spanish", "French"],
-          },
-        ]}
         url="https://www.purple-fox.io/"
       />
       <BreadcrumbJsonLd
@@ -55,13 +45,13 @@ export default function Seo() {
           },
           {
             position: 2,
-            name: "Products",
-            item: "https://example.com/products",
+            name: "Projects",
+            item: "https://example.com/projects",
           },
           {
             position: 3,
-            name: "Contact Us",
-            item: "https://example.com/contacts",
+            name: "Events",
+            item: "https://example.com/event",
           },
         ]}
       />

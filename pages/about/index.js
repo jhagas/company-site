@@ -3,7 +3,7 @@ import Navbar from "../../component/navbar";
 import { fetchAPI } from "../../lib/api";
 import Image from "next/image";
 import { getStrapiMedia } from "../../lib/media";
-
+import Seo from "../../component/seo";
 
 const grad1 = {
   background:
@@ -17,8 +17,19 @@ const grad1 = {
 };
 
 export default function About({ about }) {
+  const info = {
+    title: "About Us | Techno.in",
+    url: "/about",
+    description: about.attributes.description,
+    images: {
+      url: "https://res.cloudinary.com/dgkou6c4w/image/upload/v1651337098/Screenshot_from_2022_04_30_23_44_35_a90a9703a6.png?updated_at=2022-04-30T16:44:59.833Z",
+      alt: "Indo Instrument Site Logo",
+    },
+    sitename: "techno.in",
+  };
   return (
     <div className="bg-gray">
+      <Seo info={info} />
       <Navbar />
       <div className="flex h-fit">
         <div className="relative" style={{ flex: "0 0 100%" }}>

@@ -1,8 +1,6 @@
 import "../styles/globals.css";
 import App from "next/app";
 import Head from "next/head";
-import { createContext } from "react";
-import { fetchAPI } from "../lib/api";
 
 // Store Strapi Global object in context
 
