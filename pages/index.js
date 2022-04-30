@@ -9,9 +9,9 @@ import Projects from "../component/home/project.js";
 import { fetchAPI } from "../lib/api";
 import Email from "../component/home/email.js";
 
-export default function Home({ projects, mainheader, header, about }) {
+export default function Home({ projects, mainheader, header, about, events }) {
   return (
-    <div>
+    <div className="bg-gray overflow-x-hidden">
       <Seo />
       <Navbar />
       <Header main={mainheader} add={header} />
@@ -19,7 +19,7 @@ export default function Home({ projects, mainheader, header, about }) {
       <Vismis />
       <Overview info={about} />
       <Projects projects={projects} />
-      <Event />
+      <Event event={events}/>
       <Footer />
     </div>
   );
@@ -27,11 +27,12 @@ export default function Home({ projects, mainheader, header, about }) {
 
 export async function getStaticProps() {
   // Run API calls in parallel
-  const [projectRes, mainheadRes, headRes, aboutRes] = await Promise.all([
+  const [projectRes, mainheadRes, headRes, aboutRes, eventRes] = await Promise.all([
     fetchAPI("/projects", { populate: ["image"], sort: "publishedAt:desc", pagination:{page: 1, pageSize:3}}),
     fetchAPI("/mainheader", { populate: "bg" }),
     fetchAPI("/headers", { sort: "publishedAt:desc", populate: "bg" }),
     fetchAPI("/about", { populate: "bg" }),
+    fetchAPI("/events", { populate: ["image"], sort: ["done", "publishedAt:desc"], pagination:{page: 1, pageSize:3}}),
   ]);
 
   return {
@@ -40,6 +41,7 @@ export async function getStaticProps() {
       mainheader: mainheadRes.data,
       header: headRes.data,
       about: aboutRes.data,
+      events: eventRes.data,
     },
     revalidate: 1,
   };

@@ -7,6 +7,9 @@ export default function Email() {
   const [success, setSuccess] = useState(false);
 
   const submitEmail = (event) => {
+    setTimeout(() => {
+      setSuccess(false)
+    }, 3000);
     event.preventDefault();
     postAPI("/emails", { data: { email } });
     setEmail("");
@@ -16,7 +19,7 @@ export default function Email() {
   return (
     <div className="bg-gray1 text-white sm:px-24 px-12 py-16 flex flex-col items-center gap-5">
       {success ? (
-        <AiOutlineCheckCircle size="48px" className="text-[#83BD75]" />
+        <AiOutlineCheckCircle size="48px" className="text-[#32CD32]" />
       ) : (
         <AiOutlineMail size="48px" className="text-orange1 animate-bounce" />
       )}

@@ -17,7 +17,7 @@ export default function Overview({ info }) {
           </div>
 
           <div className="flex flex-col justify-center absolute right-0 -translate-y-1/2 top-1/2">
-            <div className="bg-blue px-12 py-12 text-white w-[30rem]">
+            <div className="bg-blue px-12 py-12 text-white w-[30rem] rounded-md shadow-lg">
               <h1 className="font-work font-bold text-3xl mb-4">
                 {info.attributes.title}
               </h1>

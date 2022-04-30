@@ -17,7 +17,7 @@ export default function Vismis() {
         </div>
         <div className="flex flex-col items-center gap-10">
           <h1 className="md:text-4xl text-3xl font-bold font-work">Our Mission</h1>
-          <div className="flex flex-row flex-wrap justify-center px-4 gap-12 gap-y-8 ">
+          <div className="flex flex-row flex-wrap justify-center px-4 gap-12 gap-y-6 ">
             <div className="bg-white transition hover:border-blue hover:border-2 hover:scale-105 rounded-md border-[1.4px] border-gray3 w-[292px] h-[235px] p-7 flex flex-col gap-2">
               <div className="w-10 h-10">
                 <Image src={research} alt="stack"></Image>
